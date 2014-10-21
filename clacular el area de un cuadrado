@@ -1,3 +1,6 @@
+creamos la clase llamada Cuadrado
+------------------------------------------------------------------------------------------------------------------------
+
 package com.Superficies;
 
 /**
@@ -23,3 +26,60 @@ public class Cuadrado {
     }
     
 }
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Creamos la clase Area
+--------------------------------------------------------------------------------------------------------------------------
+package com.Superficies;
+
+/**
+ *
+ * @author T
+ */
+public class Area1 {
+    private Cuadrado c;
+
+    public Area1(Cuadrado c) {
+        this.c = c;
+    }
+
+    public Cuadrado getC() {
+        return c;
+    }
+
+    public void setC(Cuadrado c) {
+        this.c = c;
+    }
+    public int calcular(){
+    int area=c.getLado()*c.getLado();
+    return area;
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+Creamos la clase main para usar las 2 clases, creamos un cuadrado y el area
+
+------------------------------------------------------------------------------------------------------------------------------
+package com.Superficies;
+
+/**
+ *
+ * @author T
+ */
+public class ProbarAreas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      //Primero creamos un cuadrado
+        Cuadrado d=new Cuadrado();
+       d.setLado(5);
+       // El siguiente area es el Area
+    Area1 a=new Area1(d);
+    System.out.println(a.calcular());
+    
+}
+}
+
