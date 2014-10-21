@@ -76,7 +76,7 @@ public class ProbarAreas {
       //Primero creamos un cuadrado
         Cuadrado d=new Cuadrado();
        d.setLado(5);
-       // El siguiente area es el Area
+       // El siguiente objeto es el Area
     Area1 a=new Area1(d);
     System.out.println(a.calcular());
     
